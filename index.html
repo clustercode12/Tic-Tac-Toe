@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe</title>
+         <meta charset="UTF-8">
+         <meta name="author" content="Andres Navarro Pedregal">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script type="text/javascript" src="game.js"></script>
+    </head>
+    <body>
+        <h1 class="title">Tic Tac Toe</h1>
+
+        <div class="game" style="width: 100%; text-align: center">
+            <div class="innerGame" style="display: inline-block;">
+                <div class="scoreboard">
+                    <h3>
+                        <span id = "xScore">Player X: 0</span>
+                            -||-
+                        <span id = "oScore">Player O: 0</span>
+                    </h3>
+                </div>
+
+                <div class="board" id="board">
+                    <table>
+                        <!--Grid Container-->
+                        <tbody>
+                            <tr>
+                                <td id="1" onclick="main(this.id)" style="border-radius: 15px 0px 0px 0px;"></td>
+                                <td id="2" onclick="main(this.id)"></td>
+                                <td id="3" onclick="main(this.id)" style="border-radius: 0px 15px 0px 0px;"></td>
+                            </tr>
+                            <tr>
+                                <td id="4" onclick="main(this.id)"></td>
+                                <td id="5" onclick="main(this.id)"></td>
+                                <td id="6" onclick="main(this.id)"></td>
+                            </tr>
+                            <tr>
+                                <td id="7" onclick="main(this.id)" style="border-radius: 0px 0px 0px 15px;"></td>
+                                <td id="8" onclick="main(this.id)"></td>
+                                <td id="9" onclick="main(this.id)" style="border-radius: 0px 0px 15px 0px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 id="playerWon" style="margin-top: 20px;"></h3>
+
+                <button type="button" name="restart" id="restart" onclick="clean()">Restart</button>
+            </div>
+        </div>
+    </body>
+</html>
